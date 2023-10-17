@@ -1,0 +1,10 @@
+def fact_recurs(n):
+    if n == 0:
+        return 1
+    elif n < 0:
+        return "Factorial is not defined for negative numbers"
+    else:
+        return n * fact_recurs(n - 1)
+num = int(input("Enter a number to find factorial: "))
+res = fact_recurs(num)
+print(res)
